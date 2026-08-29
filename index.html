@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jerry Zhao - Links</title>
+<link rel="icon" href="images/favicon.png" type="image/png">
+<style>
+:root{
+    --bg:#eef6f0;
+    --text:#2c3e34;
+    --muted:#5a6f62;
+    --primary:#1f7a45;
+    --primary-dark:#165c34;
+    --line:#1f7a45;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+    font-family:-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    padding:28px 16px 60px;
+}
+.wrap{max-width:520px;margin:0 auto;}
+
+/* ===== 顶部头像区 ===== */
+.profile{text-align:center;margin-bottom:26px;}
+.avatar{
+    width:104px;height:104px;border-radius:50%;
+    object-fit:cover;border:3px solid #fff;
+    box-shadow:0 4px 14px rgba(46,139,87,.2);
+    margin-bottom:16px;background:var(--line);
+}
+.profile h1{font-size:24px;font-weight:700;}
+.profile .bio{
+    font-size:14px;color:var(--muted);
+    max-width:400px;margin:8px auto 0;
+}
+
+/* ===== 区块标题（⬅️ 左对齐）===== */
+.section{margin-top:26px;}
+.section h2{
+    font-size:13px;text-transform:uppercase;letter-spacing:1px;
+    color:var(--primary);
+    margin-bottom:12px;
+    display:flex;align-items:center;justify-content:flex-start;gap:6px;  /* ⬅️ 靠左 */
+    text-align:left;  /* ⬅️ 靠左 */
+}
+
+/* ===== 通用卡片：整行可点，无白色块 ===== */
+.card{
+    display:block;
+    text-align:center;
+    text-decoration:none;color:var(--text);
+    padding:18px 16px;
+    border:2.5px solid var(--line);
+    border-radius:14px;
+    background:transparent;
+    margin-bottom:12px;
+    transition:background .18s,border-color .18s,transform .15s;
+}
+.card:hover{
+    background:rgba(46,139,87,.07);
+    border-color:var(--primary);
+    transform:translateY(-2px);
+}
+.card .title{
+    font-weight:700;font-size:16px;
+    display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;
+}
+.badge{
+    display:inline-block;
+    background:var(--primary);color:#fff;
+    font-size:11px;font-weight:700;
+    padding:4px 12px;border-radius:20px;
+    letter-spacing:.3px;
+}
+.badge:hover{background:var(--primary-dark);}
+.card .desc{
+    color:var(--muted);font-size:13.5px;margin-top:6px;
+}
+
+/* ===== 社交账号：图标在前 + 名字居中 ===== */
+.card.social{
+    display:flex;align-items:center;gap:14px;
+    justify-content:center;
+    text-align:left;padding:14px 16px;
+}
+.card.social img{
+    width:32px;height:32px;flex-shrink:0;
+    border-radius:8px;background:var(--line);
+}
+.card.social .info{display:flex;align-items:center;}
+.card.social .info .name{font-weight:600;font-size:15px;}
+
+/* ===== #ad 声明 ===== */
+.disclaimer{
+    text-align:center;font-size:11.5px;color:var(--muted);
+    margin-top:30px;padding:0 20px;
+}
+footer{text-align:center;color:var(--muted);font-size:12px;margin-top:20px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+    <header class="profile" id="top">
+        <img src="images/avatar.jpg" alt="Jerry Zhao" class="avatar">
+        <h1>Jerry Zhao</h1>
+        <p class="bio">All the content was created by me alone. The creation process was not easy. Thank you all for your support!</p>
+    </header>
+
+    <section class="section" id="store">
+        <h2>🎁 My Amazon Storefront</h2>
+        <a class="card" href="https://www.amazon.com/shop/jerry.zhao__?tag=ruizhao-20" target="_blank" rel="noopener">
+            <span class="title">😘 Jerry's Picks🛍️(Storefront) <span class="badge">Shop</span></span>
+            <div class="desc">Pick out some of the things you need, they may help me out.</div>
+        </a>
+    </section>
+
+    <section class="section" id="prime">
+        <h2>🔥 Featured </h2>
+        <a class="card" href="https://www.amazon.com/amazonprime?primeCampaignId=studentWlpPrimeRedir&linkCode=ll2&tag=ruizhao-20&linkId=ff49c1cefc4f46d17ad7c38d4601a06e&language=en_US&ref_=as_li_ss_tl" target="_blank" rel="noopener">
+            <span class="title">Get Amazon Prime FREE for 6 Months <span class="badge">Ages 18-24</span></span>
+            <div class="desc">Free shipping · Prime Video · Exclusive deals · 5% cash back · Cancel anytime</div>
+        </a>
+    </section>
+
+    <section class="section" id="social">
+        <h2>&#127760; Find Me Here</h2>
+
+        <a class="card social" href="https://www.youtube.com/@jerryzhao_jr" target="_blank" rel="noopener">
+            <img src="images/youtube.png" alt="YouTube">
+            <span class="info"><span class="name">YouTube @Jerryzhao</span></span>
+        </a>
+
+        <a class="card social" href="https://www.facebook.com/Jerryzhao.JR/" target="_blank" rel="noopener">
+            <img src="images/facebook.png" alt="Facebook">
+            <span class="info"><span class="name">Facebook @Jerryzhao</span></span>
+        </a>
+
+        <a class="card social" href="https://www.instagram.com/jerry.zhao__" target="_blank" rel="noopener">
+            <img src="images/instagram.png" alt="Instagram">
+            <span class="info"><span class="name">Instagram @Jerryzhao</span></span>
+        </a>
+
+        <a class="card social" href="https://v.douyin.com/_MHI07NTEIM/ " target="_blank" rel="noopener">
+            <img src="images/douyin.png" alt="Douyin">
+            <span class="info"><span class="name">Douyin@Jerryzhao(Live)</span></span>
+        </a>
+
+    </section>
+
+    <div class="disclaimer">As an Amazon Associate I earn from qualifying purchases.</div>
+
+    <footer>© JerryZhao · Link in bio 👆</footer>
+
+</div>
+</body>
+</html>
